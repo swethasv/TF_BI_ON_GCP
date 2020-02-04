@@ -4,7 +4,7 @@ spark = SparkSession \
     .appName("Python Spark SQL basic example") \
     .config("spark.some.config.option", "some-value") \
     .getOrCreate()
-filePath = "gs://tf-bi-dev1/"
+filePath = "gs://tf-bi-dev/"
 df_source = spark.read.option("header", "true").csv(filePath+"PS_TERM_TBL.csv")
 df_source.registerTempTable("SOURCE_TMP")
 df_staging = spark.sql("select A.INSTITUTION,A.ACAD_CAREER,A.ACAD_YEAR,A.STRM,A.TERM_BEGIN_DT,A.TERM_END_DT,A.TERM_CATEGORY,"
