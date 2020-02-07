@@ -84,4 +84,5 @@ df_final = df_staging.union(unspecifiedRow)
 
 #Export the transformed data back to Storage bucket
 df_final.write.option("header", "true").mode('overwrite').csv(targetFileName)
-spark.stop()
+if __name__=="__main__":
+	main()
