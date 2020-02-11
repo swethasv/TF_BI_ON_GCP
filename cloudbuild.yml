@@ -3,5 +3,5 @@ steps:
    args: ['clone', 'https://github.com/swethasv/TF_BI_ON_GCP','dev']   
    #args: ['checkout', 'dev']
  - name: 'gcr.io/cloud-builders/gsutil'
-   args: ['cp', 'TF_BI_ON_GCP/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
+   args: ['cp', 'dev/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
    
