@@ -4,4 +4,3 @@ steps:
    args: ['fetch', '--unshallow']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['cp', 'TF_BI_ON_GCP/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
-   
