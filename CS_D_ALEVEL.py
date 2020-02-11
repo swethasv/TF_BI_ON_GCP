@@ -26,7 +26,7 @@ SEQUENCE_ID = config.get('column_name', 'monotonically_inc_id')
 sourceTablelist = ["PSXLATITEM"]
 
 #Get the target table filename from the python filename
-targetFileName =  TARGETFILEPATH+os.path.basename(sys.argv[0])[:-int(CHARS_TO_TRIM)]
+#targetFileName =  TARGETFILEPATH+os.path.basename(sys.argv[0])[:-int(CHARS_TO_TRIM)]
 
 #Iterate through the source table list and load the data into a Spark dataframe. 
 def createTempTables(sparkSess,sourceTablelist):
