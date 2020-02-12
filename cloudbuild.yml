@@ -1,6 +1,6 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   #args: ['clone','-b heads/dev', 'https://github.com/swethasv/TF_BI_ON_GCP.git']   
+   #args: ['clone','-b heads:dev', 'https://github.com/swethasv/TF_BI_ON_GCP.git']   
    args: ['branch','-a']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['cp', 'TF_BI_ON_GCP/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
