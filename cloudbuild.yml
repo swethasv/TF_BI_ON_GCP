@@ -1,9 +1,9 @@
 steps:
-  main_clone:
-    title: 'Cloning main repository...'
-    type: git-clone
-    repo: https://github.com/swethasv/TF_BI_ON_GCP
-    revision: dev
-    git: github-1
+ - name: gcr.io/cloud-builders/git
+ - repository_url: 'https://github.com/swethasv/TF_BI_ON_GCP'
+ - clone_into_dir: "DEV"
+ - branch: "dev"
+  # args: ['clone', 'https://github.com/swethasv/TF_BI_ON_GCP','dev']   
+   #args: ['checkout', 'dev']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['cp', 'dev/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
