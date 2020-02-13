@@ -1,5 +1,5 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: ['update','https://github.com/swethasv/TF_BI_ON_GCP']
+   args: ['--update','https://github.com/swethasv/TF_BI_ON_GCP']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['cp', 'TF_BI_ON_GCP/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
