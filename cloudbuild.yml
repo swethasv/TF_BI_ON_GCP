@@ -1,6 +1,8 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: ['clone', 'https://github.com/swethasv/TF_BI_ON_GCP']
-   branches: ['master']
- - name: 'gcr.io/cloud-builders/gsutil'
-   args: ['cp', 'TF_BI_ON_GCP/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
+   entrypoint: 'bash'
+   id: initialize-submodules
+   args: 
+  - '-c'
+  - |
+        git init
