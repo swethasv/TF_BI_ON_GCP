@@ -1,3 +1,3 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: ['sync','https://github.com/swethasv/TF_BI_ON_GCP']
+   args: ['clone','--ref dev','https://github.com/swethasv/TF_BI_ON_GCP']
