@@ -1,5 +1,7 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: ['clone','https://source.cloud.google.com/maximal-muse-251207/github_swethasv_tf_bi_on_gcp']
+   args: ['clone','https://github.com/swethasv/TF_BI_ON_GCP']
+ - name: 'gcr.io/cloud-builders/git'
+   args: ['checkout', 'dev']
  - name: 'gcr.io/cloud-builders/gsutil'
    args: ['cp', 'dev/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles']
