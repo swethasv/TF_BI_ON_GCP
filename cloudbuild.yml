@@ -3,8 +3,6 @@ steps:
    #args: [ 'fetch','--tags','--unshallow']
    args:
   - clone 
-  - -depth
-  - 1
   - --single-branch
   - -b
   - dev
