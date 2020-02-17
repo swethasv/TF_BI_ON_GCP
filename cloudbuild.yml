@@ -1,3 +1,11 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: [ 'fetch','--tags','--unshallow']
+   #args: [ 'fetch','--tags','--unshallow']
+   args:
+  - clone 
+  - -depth
+  - 1
+  - --single-branch
+  - -b
+  - dev
+  - https://github.com/swethasv/TF_BI_ON_GCP
