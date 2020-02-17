@@ -1,4 +1,4 @@
 steps:
  - name: gcr.io/cloud-builders/git
-   args: [ 'fetch','origin','branch:dev']
+   args: [ 'fetch','origin','https://github.com/swethasv/TF_BI_ON_GCP']
 
