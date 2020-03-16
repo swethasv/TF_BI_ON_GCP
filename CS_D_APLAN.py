@@ -25,7 +25,7 @@ TARGETFILEPATH = config.get('gs_bucket_path', 'csv_targetFile')
 CHARS_TO_TRIM = config.get('column_name', 'NoOfCharsToTrim')
 SEQUENCE_ID = config.get('column_name', 'monotonically_inc_id')
 
-#List all the required source tables
+#List all the required source tables from dev branch
 sourceTablelist = ["PS_ACAD_PLAN_TBL"]
 
 #Get the target table filename from the python filename
