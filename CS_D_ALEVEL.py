@@ -25,7 +25,7 @@ SEQUENCE_ID = config.get('column_name', 'monotonically_inc_id')
 #List all the required source tables
 sourceTablelist = ["PSXLATITEM"]
 
-#This is from the dev branchs swetha on 16th March
+#This is from the dev branchs swetha on 5th May
 #Get the target table filename from the python filename
 #targetFileName =  TARGETFILEPATH+os.path.basename(sys.argv[0])[:-int(CHARS_TO_TRIM)]
 
